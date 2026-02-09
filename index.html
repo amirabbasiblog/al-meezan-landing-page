@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Mezaan Management Consultancy LLC | Expert UAE Solutions</title>
+    <meta name="description" content="Al Mezaan Management Consultancy LLC - Leading provider of Management, IT, Financial, and Corporate services in Sharjah Media City, UAE.">
+    <link rel="stylesheet" href="./output.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; }
+        .bg-navy { background-color: #002349; }
+        .text-navy { color: #002349; }
+        .bg-gold { background-color: #c5a043; }
+        .text-gold { color: #c5a043; }
+        .border-gold { border-color: #c5a043; }
+        /* Hover state fix for 'Our Expertise' button */
+        .hover-gold:hover { background-color: #c5a043; color: white; border-color: #c5a043; }
+        /* Floating WhatsApp animation */
+        @keyframes pulse-green {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(34, 197, 94, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+        }
+        .whatsapp-float { animation: pulse-green 2s infinite; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/971121234567" target="_blank" class="whatsapp-float fixed bottom-6 right-6 z-[60] bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:bg-green-600 transition-all">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <!-- Logo Placeholder -->
+                <img src="./Photos/al-meezan-Website logo.png" alt="Al Mezaan Logo" class="h-14 w-auto">
+            </div>
+            
+            <div class="hidden md:flex space-x-8 font-semibold text-navy">
+                <a href="#home" class="hover:text-gold transition">Home</a>
+                <a href="#services" class="hover:text-gold transition">Services</a>
+                <a href="#about" class="hover:text-gold transition">About</a>
+                <a href="#contact" class="hover:text-gold transition">Contact</a>
+            </div>
+
+            <button id="mobile-btn" class="md:hidden text-navy text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden bg-white border-t p-6 flex flex-col space-y-4 md:hidden shadow-xl">
+            <a href="#home" class="text-navy font-bold hover:text-gold">Home</a>
+            <a href="#services" class="text-navy font-bold hover:text-gold">Services</a>
+            <a href="#about" class="text-navy font-bold hover:text-gold">About</a>
+            <a href="#contact" class="text-navy font-bold hover:text-gold">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-40 bg-navy overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <!-- Background Image -->
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1920" alt="Dubai Skyline" class="object-cover w-full h-full">
+        </div>
+        <div class="container mx-auto px-6 relative z-10 text-center lg:text-left flex flex-col lg:flex-row items-center">
+            <div class="lg:w-2/3">
+                <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
+                    Precision, Balance & <span class="text-gold">Strategic Growth</span>
+                </h1>
+                <p class="text-xl text-gray-300 mb-10 max-w-2xl">
+                    Al Mezaan Management Consultancy LLC provides holistic business solutions in the UAE. From IT infrastructure to financial auditing, we balance your needs for sustainable success.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+                    <a href="#contact" class="bg-gold text-white px-10 py-4 rounded-md font-bold text-lg hover:bg-yellow-600 transition shadow-xl text-center">Start Consultancy</a>
+                    <a href="#services" class="border-2 border-white text-white px-10 py-4 rounded-md font-bold text-lg hover-gold transition text-center">Our Expertise</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section with Counter Animation Logic -->
+    <div id="stats-counter" class="bg-white py-12 border-b">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <h3 class="text-3xl font-bold text-navy" data-target="500">0</h3>
+                    <p class="text-gray-500 text-sm uppercase tracking-wide">Consultations</p>
+                </div>
+                <div>
+                    <h3 class="text-3xl font-bold text-navy" data-target="50">0</h3>
+                    <p class="text-gray-500 text-sm uppercase tracking-wide">Expert Advisors</p>
+                </div>
+                <div>
+                    <h3 class="text-3xl font-bold text-navy" data-target="100">0</h3>
+                    <p class="text-gray-500 text-sm uppercase tracking-wide">Compliance %</p>
+                </div>
+                <div>
+                    <h3 class="text-3xl font-bold text-navy" data-target="24">0</h3>
+                    <p class="text-gray-500 text-sm uppercase tracking-wide">Support Hours</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-white scroll-mt-6">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-navy text-4xl font-bold mb-4">Our Comprehensive Solutions</h2>
+            <p class="text-gray-500 mb-16 max-w-2xl mx-auto">Licensed expertise across multiple domains to empower your enterprise in Sharjah Media City and beyond.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-50 p-8 rounded-2xl border-b-4 border-gold hover:shadow-2xl transition group cursor-default">
+                    <div class="text-gold text-4xl mb-6 group-hover:scale-110 transition duration-300"><i class="fas fa-laptop-code"></i></div>
+                    <h3 class="text-xl font-bold text-navy mb-4">IT & Cloud Services</h3>
+                    <p class="text-gray-600 text-sm">Web portals, cloud computing, hosting, and data processing services tailored for modern tech needs.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl border-b-4 border-gold hover:shadow-2xl transition group cursor-default">
+                    <div class="text-gold text-4xl mb-6 group-hover:scale-110 transition duration-300"><i class="fas fa-briefcase"></i></div>
+                    <h3 class="text-xl font-bold text-navy mb-4">Management Consulting</h3>
+                    <p class="text-gray-600 text-sm">Strategic advisory, HR management, logistics consultancy, and public relations for seamless operations.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl border-b-4 border-gold hover:shadow-2xl transition group cursor-default">
+                    <div class="text-gold text-4xl mb-6 group-hover:scale-110 transition duration-300"><i class="fas fa-calculator"></i></div>
+                    <h3 class="text-xl font-bold text-navy mb-4">Financial Advisory</h3>
+                    <p class="text-gray-600 text-sm">Expert auditing, bookkeeping, and tax consultancy to maintain the "Mezaan" (balance) of your finances.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl border-b-4 border-gold hover:shadow-2xl transition group cursor-default">
+                    <div class="text-gold text-4xl mb-6 group-hover:scale-110 transition duration-300"><i class="fas fa-bullhorn"></i></div>
+                    <h3 class="text-xl font-bold text-navy mb-4">Corporate Marketing</h3>
+                    <p class="text-gray-600 text-sm">Branding, digital content management, and specialized marketing solutions for global reach.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-100 scroll-mt-24">
+        <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2">
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800" alt="Office Meeting" class="rounded-3xl shadow-2xl border-l-8 border-gold">
+            </div>
+            <div class="lg:w-1/2">
+                <span class="text-gold font-bold uppercase tracking-widest">Since 2025</span>
+                <h2 class="text-4xl font-bold text-navy mt-2 mb-6">Al Mezaan: Balancing Excellence in the UAE</h2>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    Based in <strong>Sharjah Media City (Shams)</strong>, Al Mezaan Management Consultancy LLC is a licensed entity (License No. 2540653.01) dedicated to providing ethical and results-driven consultancy. 
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="flex items-center space-x-3 bg-white p-3 rounded-lg shadow-sm">
+                        <i class="fas fa-check-circle text-gold"></i>
+                        <span class="font-semibold text-navy">Shams Licensed</span>
+                    </div>
+                    <div class="flex items-center space-x-3 bg-white p-3 rounded-lg shadow-sm">
+                        <i class="fas fa-check-circle text-gold"></i>
+                        <span class="font-semibold text-navy">Customized Strategy</span>
+                    </div>
+                    <div class="flex items-center space-x-3 bg-white p-3 rounded-lg shadow-sm">
+                        <i class="fas fa-check-circle text-gold"></i>
+                        <span class="font-semibold text-navy">Expert Team</span>
+                    </div>
+                    <div class="flex items-center space-x-3 bg-white p-3 rounded-lg shadow-sm">
+                        <i class="fas fa-check-circle text-gold"></i>
+                        <span class="font-semibold text-navy">Full Compliance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section (Ethical & Transparent) -->
+    <section class="py-16 bg-white border-b">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-navy text-3xl font-bold mb-2">Our Core Values</h2>
+                <div class="h-1 w-20 bg-gold mx-auto"></div>
+                <p class="mt-4 text-gray-500">Founded on the principles of transparency and excellence.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="flex flex-col items-center text-center p-6 hover:bg-gray-50 rounded-xl transition">
+                    <div class="w-16 h-16 bg-navy text-gold rounded-full flex items-center justify-center text-2xl mb-4 shadow-lg">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-2">Meezan (Balance)</h3>
+                    <p class="text-gray-600">We prioritize equilibrium in every decision to ensure your business remains stable and sustainable.</p>
+                </div>
+                <div class="flex flex-col items-center text-center p-6 hover:bg-gray-50 rounded-xl transition">
+                    <div class="w-16 h-16 bg-navy text-gold rounded-full flex items-center justify-center text-2xl mb-4 shadow-lg">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-2">Integrity</h3>
+                    <p class="text-gray-600">Our actions are rooted in transparency and honesty, fully aligned with UAE's corporate regulations.</p>
+                </div>
+                <div class="flex flex-col items-center text-center p-6 hover:bg-gray-50 rounded-xl transition">
+                    <div class="w-16 h-16 bg-navy text-gold rounded-full flex items-center justify-center text-2xl mb-4 shadow-lg">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-2">Strategic Growth</h3>
+                    <p class="text-gray-600">Your success is our ultimate goal. We ensure growth through meticulous planning and execution.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with Formspree Integration -->
+    <section id="contact" class="py-24 bg-white scroll-mt-4">
+        <div class="container mx-auto px-6">
+            <div class="bg-navy rounded-3xl overflow-hidden shadow-2xl flex flex-col lg:flex-row">
+                <div class="lg:w-1/2 p-12 text-white">
+                    <h2 class="text-3xl font-bold mb-6">Request a Consultation</h2>
+                    <p class="text-blue-200 mb-10">Our experts are ready to help you scale your business in the UAE market. Let's talk today.</p>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-map-marker-alt text-gold mt-1 text-xl"></i>
+                            <div>
+                                <p class="font-bold">Address</p>
+                                <p class="text-blue-100 text-sm">Sharjah Media City, Sharjah, UAE</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-envelope text-gold mt-1 text-xl"></i>
+                            <div>
+                                <p class="font-bold">Email</p>
+                                <p class="text-blue-100 text-sm">info@almeezan.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <i class="fab fa-whatsapp text-gold mt-1 text-xl"></i>
+                            <div>
+                                <p class="font-bold">WhatsApp</p>
+                                <a href="https://wa.me/971121234567" target="_blank" class="text-blue-100 text-sm hover:text-gold transition">+971 12 123 4567</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 p-12 bg-white m-4 rounded-2xl">
+                    <!-- ACTION: Replace 'YOUR_FORMSPREE_ID_HERE' with your actual Formspree ID -->
+                    <form action="https://formspree.io/f/mjgekjle" method="POST" id="contactForm" class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <input type="text" name="name" required placeholder="Full Name" class="w-full p-4 bg-gray-100 rounded-lg focus:outline-gold border-transparent border-2 focus:border-gold">
+                            <input type="email" name="email" required placeholder="Email" class="w-full p-4 bg-gray-100 rounded-lg focus:outline-gold border-transparent border-2 focus:border-gold">
+                        </div>
+                        <select name="interest" class="w-full p-4 bg-gray-100 rounded-lg focus:outline-gold border-transparent border-2 focus:border-gold">
+                            <option value="Management">Interest: Management Consulting</option>
+                            <option value="IT">Interest: IT & Cloud Solutions</option>
+                            <option value="Financial">Interest: Financial Advisory</option>
+                            <option value="Marketing">Interest: Marketing Services</option>
+                        </select>
+                        <textarea name="message" rows="4" required placeholder="How can we help you?" class="w-full p-4 bg-gray-100 rounded-lg focus:outline-gold border-transparent border-2 focus:border-gold"></textarea>
+                        
+                        <!-- Status Messages -->
+                        <div id="status-message" class="hidden text-center py-2 rounded-lg font-semibold"></div>
+                        
+                        <button type="submit" id="submit-btn" class="w-full bg-navy text-white font-bold py-4 rounded-lg hover:bg-gold transition shadow-lg transform active:scale-95">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <img src="./Photos/al-meezan-Website logo.png" alt="Al Mezaan" class="h-24 mx-auto mb-6">
+            <p class="max-w-md mx-auto mb-8">Al Mezaan Management Consultancy LLC - Providing balance and strategic growth to UAE's corporate landscape.</p>
+            <div class="flex justify-center space-x-6 mb-8 text-xl">
+                <a href="#" class="hover:text-gold transition"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="hover:text-gold transition"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="hover:text-gold transition"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="text-sm border-t border-gray-800 pt-8">
+                &copy; 2025 Al Mezaan Management Consultancy LLC. All Rights Reserved. <br>
+                Licensed by Sharjah Media City (Shams).
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu logic
+        const btn = document.getElementById('mobile-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => menu.classList.add('hidden'));
+        });
+
+        // Animation for Stats Counter
+        const statsSection = document.getElementById('stats-counter');
+        const counters = document.querySelectorAll('[data-target]');
+        let animated = false;
+
+        const animateCounters = () => {
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const updateCount = () => {
+                    const count = +counter.innerText.replace('+', '').replace('%', '');
+                    const speed = target / 100;
+                    if (count < target) {
+                        const nextVal = Math.ceil(count + speed);
+                        counter.innerText = (target === 100 ? nextVal + '%' : (target === 24 ? nextVal : nextVal + '+'));
+                        setTimeout(updateCount, 20);
+                    } else {
+                        counter.innerText = (target === 100 ? target + '%' : (target === 24 ? target : target + '+'));
+                    }
+                };
+                updateCount();
+            });
+        };
+
+        window.addEventListener('scroll', () => {
+            if (!animated) {
+                const rect = statsSection.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                    animateCounters();
+                    animated = true;
+                }
+            }
+        });
+
+        // Formspree AJAX Submission logic
+        const form = document.getElementById("contactForm");
+        const status = document.getElementById("status-message");
+        const submitBtn = document.getElementById("submit-btn");
+
+        form.addEventListener("submit", async function(event) {
+            event.preventDefault();
+            const data = new FormData(event.target);
+            
+            submitBtn.disabled = true;
+            submitBtn.innerText = "Sending...";
+            status.classList.add('hidden');
+
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    status.innerText = "Thanks! Your message has been sent successfully.";
+                    status.classList.remove('hidden', 'bg-red-100', 'text-red-700');
+                    status.classList.add('bg-green-100', 'text-green-700');
+                    form.reset();
+                    submitBtn.innerText = "Submit Request";
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            status.innerText = data["errors"].map(error => error["message"]).join(", ");
+                        } else {
+                            status.innerText = "Oops! There was a problem submitting your form";
+                        }
+                    })
+                }
+            }).catch(error => {
+                status.innerText = "Oops! There was a problem submitting your form";
+                status.classList.remove('hidden');
+                status.classList.add('bg-red-100', 'text-red-700');
+            }).finally(() => {
+                submitBtn.disabled = false;
+                if(submitBtn.innerText === "Sending...") submitBtn.innerText = "Submit Request";
+            });
+        });
+    </script>
+</body>
+</html>
