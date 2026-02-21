@@ -57,7 +57,7 @@
             </button>
         </div>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden bg-white border-t p-6 flex flex-col space-y-4 md:hidden shadow-xl">
+        <div id="mobile-menu" class="hidden bg-white border-t p-6 flex-col space-y-4 md:hidden shadow-xl">
             <a href="#home" class="text-navy font-bold hover:text-gold">Home</a>
             <a href="#services" class="text-navy font-bold hover:text-gold">Services</a>
             <a href="#about" class="text-navy font-bold hover:text-gold">About</a>
@@ -288,6 +288,7 @@
         const btn = document.getElementById('mobile-btn');
         const menu = document.getElementById('mobile-menu');
         btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+        menu.classList.toggle('flex');
         document.querySelectorAll('#mobile-menu a').forEach(link => {
             link.addEventListener('click', () => menu.classList.add('hidden'));
         });
